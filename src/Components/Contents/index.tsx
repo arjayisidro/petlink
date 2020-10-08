@@ -174,7 +174,10 @@ function Contents(props: Props) {
               onChange={handleChange}
               aria-label="simple tabs example"
             >
-              <Tab label="Accessories" {...a11yProps(0)} />
+              <Tab
+                label={intl.formatMessage({ id: 'accessories' })}
+                {...a11yProps(0)}
+              />
               <Tab label="Foods" {...a11yProps(1)} />
               <Tab label="Vitamins" {...a11yProps(2)} />
             </Tabs>
